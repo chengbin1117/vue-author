@@ -1,0 +1,1176 @@
+
+
+@media (min-width: 768px){
+
+  body{
+    margin: 0;
+    padding: 0;
+  }
+
+  /*小圆点样式*/
+  #fp-nav ul li, .fp-slidesNav ul li {
+    display: block;
+    width: 14px;
+    height: 13px;
+    margin: 15px 0;
+    position: relative;
+  }
+  #fp-nav ul li a span, .fp-slidesNav ul li a span{
+    position: absolute;
+    z-index: 1;
+    /*border: 0;*/
+    background: #DDDDDD;
+    left: 50%;
+    top: 50%;
+    height: 12px;
+    width: 12px;
+    transition: width 2s;
+    /*border: 4px solid #f95e58;*/
+  }
+
+  #fp-nav ul li a.active span, #fp-nav ul li:hover a.active span, .fp-slidesNav ul li a.active span, .fp-slidesNav ul li:hover a.active span {
+    height: 12px;
+    width: 12px;
+    margin: -6px 0 0 -6px;
+    border-radius: 100%;
+    border: 4px solid #C4E0FF;
+    background-color: #2382EA;
+    /*  -webkit-transform: translateX(-4px);
+      -moz-transform: translateX(-4px);
+      -ms-transform: translateX(-4px);
+      transform: translateX(-4px);*/
+  }
+  #fp-nav ul li:hover a span, .fp-slidesNav ul li:hover a span{
+    height: 12px;
+    width: 12px;
+    margin: -6px 0 0 -6px;
+    border-radius: 100%;
+    border: 4px solid #C4E0FF;
+    background-color: #2382EA;
+  }
+  /*箭头上下跳动*/
+  @-webkit-keyframes bounce-down {
+    25% {-webkit-transform: translateY(-10px);}
+    50%, 100% {-webkit-transform: translateY(0);}
+    75% {-webkit-transform: translateY(10px);}
+  }
+
+  @keyframes bounce-down {
+    25% {transform: translateY(-10px);}
+    50%, 100% {transform: translateY(0);}
+    75% {transform: translateY(10px);}
+  }
+
+  .animate-bounce-down{
+    display: block;
+    position: absolute;
+    left: 50%;
+    bottom: 20px;
+    z-index: 996;
+    width: 30px;
+    height: 30px;
+    -webkit-animation: bounce-down 2s linear infinite;
+    animation: bounce-down 2s linear infinite;
+  }
+  .animate-bounce-down img {
+    border: 0 none;
+  }
+  /*头条样式*/
+  .header {
+    /* -webkit-transform: translateY(-80px);
+     -moz-transform: translateY(-80px);
+     -ms-transform: translateY(-80px);
+     transform: translateY(-80px);
+     -webkit-transition: -webkit-transform .3s;
+     transition: -webkit-transform .3s;
+     -moz-transition: transform .3s,-moz-transform .3s;
+     transition: transform .3s;
+     transition: transform .3s,-webkit-transform .3s,-moz-transform .3s;
+     -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+     box-sizing: border-box;
+     background: #fff;
+     z-index: 3;
+     height: 76px;
+     width: 100%;
+     -webkit-box-shadow: 0 1px 10px hsla(0,7%,56%,.08);
+     -moz-box-shadow: 0 1px 10px hsla(0,7%,56%,.08);
+     box-shadow: 0 1px 10px hsla(0,7%,56%,.08);*/
+    background: #ffffff;
+    z-index: 3;
+    height: 80px;
+    width: 100%;
+    -webkit-box-shadow: 15px 0px 38px rgba(132,152,179,0.21);
+    -moz-box-shadow: 15px 0px 38px rgba(132,152,179,0.21);
+    box-shadow:15px 0px 38px rgba(132,152,179,0.21);
+    transition: transform .3s,
+    -webkit-transform .3s,
+    -moz-transform .3s;
+    transform: translateY(-80px);
+  }
+  .show-header {
+    -webkit-transform: translateY(0);
+    -moz-transform: translateY(0);
+    -ms-transform: translateY(0);
+    transform: translateY(0);
+  }
+  .fixed {
+    position: fixed;
+    top: 0;
+    left: 0;
+  }
+  .header .logo_left {
+    position: absolute;
+    left: 38px;
+    top: 22px;
+    height: 43px;
+    width: 166px;
+  }
+  .header .btn-wrapper {
+    position: absolute;
+    bottom: 15px;
+    right: 40px;
+  }
+  .header .btn-wrapper .register {
+    background-color: #fff;
+    border: 1px solid #2382EA;
+    color: #2382EA;
+  }
+  .header .btn-wrapper .register:hover {
+    color: rgba(35, 130, 234, 0.7);
+    border: 1px solid rgba(35, 130, 234, 0.7);
+  }
+
+
+  .header .btn-wrapper .login {
+    background-color: #2382EA;
+    color: #fff;
+  }
+  .header .btn-wrapper .login:hover {
+    background: rgba(35, 130, 234, 0.7);
+  }
+  .header .btn-wrapper .btn {
+    display: inline-block;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 120px;
+    height: 50px;
+    /*background-color: #2382EA;*/
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    margin-left: 10px;
+    line-height: 50px;
+    cursor: pointer;
+    -webkit-user-select: none;
+    text-align: center;
+    font-size: 16px;
+  }
+  /*第6屏*/
+  .six{
+    background-image: url("https://pro-kg-oss.oss-cn-beijing.aliyuncs.com/author/inlet/6.1@3x.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  .six .only-logo{
+    z-index: 6;
+    height: 43px;
+    width: 166px;
+    position: absolute;
+    left: 99px;
+    top: 38px;
+  }
+  .six .text{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform:translate(-50%,-50%);
+    text-align: center;
+  }
+  .six .text .btn-wrapper {
+    padding-top: 50px;
+  }
+  .six .text .btn-wrapper .register {
+    background-color: #fff;
+    border: 1px solid #2382EA;
+    color: #2382EA;
+  }
+  .six .text .btn-wrapper .login {
+    background-color: #2382EA;
+    color: #fff;
+  }
+  .six .text .btn-wrapper .login:hover {
+    background: rgba(35, 130, 234, 0.7);
+  }
+  .six .text .btn-wrapper .register:hover {
+    color: rgba(35, 130, 234, 0.7);
+    border: 1px solid rgba(35, 130, 234, 0.7);
+  }
+  .six .text .btn-wrapper .btn {
+    display: inline-block;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 150px;
+    height: 50px;
+    /*background-color: #2382EA;*/
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    margin-left: 30px;
+    line-height: 50px;
+    cursor: pointer;
+    -webkit-user-select: none;
+    text-align: center;
+    font-size: 16px;
+  }
+  .six .text .text-p{
+    font-size:36px;
+    font-family:MicrosoftYaHei-Bold;
+    color:rgba(63,68,76,1);
+    padding-top: 28px;
+    margin: 0;
+    font-weight: bold;
+  }
+  .six .text .text-p-last{
+    font-size:24px;
+    font-family:MicrosoftYaHei;
+    color:rgba(102,102,102,1);
+    padding-top: 28px;
+    margin: 0;
+  }
+  .border{
+    border: 1px solid red;
+  }
+  .re{
+    position: relative;
+  }
+  .inline{
+    display: inline-block;
+  }
+  /*第5屏幕*/
+  .five{
+    display: -webkit-box; /* 老版本语法（ Safari, iOS, Android browser, older WebKit browsers） */
+    display: -moz-box;/* 老版本火狐语法 */
+    display: -ms-flexbox; /* 混合版本语法: IE 10 */
+    /* 新语法 */
+    display: -webkit-flex;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url("https://pro-kg-oss.oss-cn-beijing.aliyuncs.com/author/inlet/5.1@3x.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  .five  .five-img{
+    width:627px;
+    height:406px;
+    background-image: url("https://pro-kg-oss.oss-cn-beijing.aliyuncs.com/author/inlet/5.2@3x.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .five .five-text{
+    height:413px;
+    margin-left: 123px;
+    display: -webkit-box; /* 老版本语法（ Safari, iOS, Android browser, older WebKit browsers） */
+    display: -moz-box;/* 老版本火狐语法 */
+    display: -ms-flexbox; /* 混合版本语法: IE 10 */
+    /* 新语法 */
+    display: -webkit-flex;
+    display: flex;
+    flex-flow: nowrap column;
+    /* 老版本语法 */
+    -webkit-box-pack: justify;
+    -moz-box-pack: justify;
+    -ms-flex-pack: justify;
+    /* 新版本语法 */
+    -webkit-justify-content: center;
+    -moz-justify-content: center;
+    justify-content: center;
+  }
+  .five .five-text .p1{
+    font-size:36px;
+    font-family:MicrosoftYaHei-Bold;
+    color:rgba(63,68,76,1);
+    font-weight: bold;
+  }
+  .five .five-text .p2{
+    font-size:24px;
+    font-family:MicrosoftYaHei;
+    color:rgba(102,102,102,1);
+  }
+  .five .five-text p{
+    margin: 0;
+    padding-bottom: 30px;
+  }
+  /*第四屏幕*/
+  .four{
+    background-image: url("https://pro-kg-oss.oss-cn-beijing.aliyuncs.com/author/inlet/4.1@3x.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: -webkit-box; /* 老版本语法（ Safari, iOS, Android browser, older WebKit browsers） */
+    display: -moz-box;/* 老版本火狐语法 */
+    display: -ms-flexbox; /* 混合版本语法: IE 10 */
+    /* 新语法 */
+    display: -webkit-flex;
+    display: flex;
+    /* 老版本语法 */
+    -webkit-box-pack: justify;
+    -moz-box-pack: justify;
+    -ms-flex-pack: justify;
+    /* 新版本语法 */
+    -webkit-justify-content: center;
+    -moz-justify-content: center;
+    /* 老版本方法 */
+    -webkit-box-align: center;
+    -moz-box-align: center;
+    -ms-flex-align:center; /* 混合语法 */
+    /* 新版本语法 */
+    -webkit-align-items: center;
+    -moz-align-items: center;
+    align-items: center;
+    justify-content: center;
+  }
+  .four .four-text{
+    height:413px;
+    /*margin-left: 123px;*/
+    display: -webkit-box; /* 老版本语法（ Safari, iOS, Android browser, older WebKit browsers） */
+    display: -moz-box;/* 老版本火狐语法 */
+    display: -ms-flexbox; /* 混合版本语法: IE 10 */
+    /* 新语法 */
+    display: -webkit-flex;
+    display: flex;
+    flex-flow: nowrap column;
+    /* 老版本语法 */
+    -webkit-box-pack: justify;
+    -moz-box-pack: justify;
+    -ms-flex-pack: justify;
+    /* 新版本语法 */
+    -webkit-justify-content: center;
+    -moz-justify-content: center;
+    justify-content: center;
+  }
+  .four .four-text .p1{
+    font-size:36px;
+    font-family:MicrosoftYaHei-Bold;
+    color:rgba(63,68,76,1);
+    font-weight: bold;
+  }
+  .four .four-text .p2{
+    font-size:24px;
+    font-family:MicrosoftYaHei;
+    color:rgba(102,102,102,1);
+  }
+  .four .four-text p{
+    margin: 0;
+    padding-bottom: 28px;
+  }
+  .four .four-img{
+    width:524px;
+    height:333px;
+    background-image: url("https://pro-kg-oss.oss-cn-beijing.aliyuncs.com/author/inlet/4.2@3x.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-left: 84px;
+  }
+  /*第三屏幕*/
+  .three{
+    display: -webkit-box; /* 老版本语法（ Safari, iOS, Android browser, older WebKit browsers） */
+    display: -moz-box;/* 老版本火狐语法 */
+    display: -ms-flexbox; /* 混合版本语法: IE 10 */
+    /* 新语法 */
+    display: -webkit-flex;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url("https://pro-kg-oss.oss-cn-beijing.aliyuncs.com/author/inlet/3.1@3x.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  .three .three-img{
+    width:556px;
+    height:355px;
+    background-image: url("https://pro-kg-oss.oss-cn-beijing.aliyuncs.com/author/inlet/3.2@3x.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .three .three-text{
+    height:413px;
+    margin-left: 123px;
+    display: -webkit-box; /* 老版本语法（ Safari, iOS, Android browser, older WebKit browsers） */
+    display: -moz-box;/* 老版本火狐语法 */
+    display: -ms-flexbox; /* 混合版本语法: IE 10 */
+    /* 新语法 */
+    display: -webkit-flex;
+    display: flex;
+    flex-flow: nowrap column;
+    /* 老版本语法 */
+    -webkit-box-pack: justify;
+    -moz-box-pack: justify;
+    -ms-flex-pack: justify;
+    /* 新版本语法 */
+    -webkit-justify-content: center;
+    -moz-justify-content: center;
+    justify-content: center;
+  }
+  .three .three-text .p1{
+    font-size:36px;
+    font-family:MicrosoftYaHei-Bold;
+    color:rgba(63,68,76,1);
+    font-weight: bold;
+  }
+  .three .three-text .p2{
+    font-size:24px;
+    font-family:MicrosoftYaHei;
+    color:rgba(102,102,102,1);
+  }
+  .three .three-text p{
+    margin: 0;
+    padding-bottom: 28px;
+  }
+  /*第2屏幕*/
+  .two{
+    display: -webkit-box; /* 老版本语法（ Safari, iOS, Android browser, older WebKit browsers） */
+    display: -moz-box;/* 老版本火狐语法 */
+    display: -ms-flexbox; /* 混合版本语法: IE 10 */
+    /* 新语法 */
+    display: -webkit-flex;
+    display: flex;
+    /* 老版本方法 */
+    -webkit-box-align: center;
+    -moz-box-align: center;
+    -ms-flex-align:center; /* 混合语法 */
+    /* 新版本语法 */
+    -webkit-align-items: center;
+    -moz-align-items: center;
+    align-items: center;
+    /* 老版本语法 */
+    -webkit-box-pack: justify;
+    -moz-box-pack: justify;
+    -ms-flex-pack: justify;
+    /* 新版本语法 */
+    -webkit-justify-content: center;
+    -moz-justify-content: center;
+    justify-content: center;
+    background-image: url("https://pro-kg-oss.oss-cn-beijing.aliyuncs.com/author/inlet/2.1@3x.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  .two .two-img{
+    width:571px;
+    height:478px;
+    background-image: url("https://pro-kg-oss.oss-cn-beijing.aliyuncs.com/author/inlet/2.2@3x.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-left: 84px;
+  }
+  .two .two-text{
+    width: 384px;
+    height:413px;
+    /*margin-left: 123px;*/
+    display: -webkit-box; /* 老版本语法（ Safari, iOS, Android browser, older WebKit browsers） */
+    display: -moz-box;/* 老版本火狐语法 */
+    display: -ms-flexbox; /* 混合版本语法: IE 10 */
+    /* 新语法 */
+    display: -webkit-flex;
+    display: -webkit-box; /* 老版本语法（ Safari, iOS, Android browser, older WebKit browsers） */
+    display: -moz-box;/* 老版本火狐语法 */
+    display: -ms-flexbox; /* 混合版本语法: IE 10 */
+    /* 新语法 */
+    display: -webkit-flex;
+    /* 老版本语法 */
+    -webkit-box-pack: justify;
+    -moz-box-pack: justify;
+    -ms-flex-pack: justify;
+    /* 新版本语法 */
+    -webkit-justify-content: center;
+    -moz-justify-content: center;
+    display: flex;
+    flex-flow: nowrap column;
+    /* 老版本语法 */
+    -webkit-box-pack: justify;
+    -moz-box-pack: justify;
+    -ms-flex-pack: justify;
+    /* 新版本语法 */
+    -webkit-justify-content: center;
+    -moz-justify-content: center;
+    justify-content: center;
+  }
+  .two .two-text .p1{
+    font-size:36px;
+    font-family:MicrosoftYaHei-Bold;
+    color:rgba(63,68,76,1);
+    font-weight: bold;
+  }
+  .two .two-text .p2{
+    font-size:24px;
+    font-family:MicrosoftYaHei;
+    color:rgba(102,102,102,1);
+  }
+  .two .two-text p{
+    margin: 0;
+    padding-bottom: 15px;
+  }
+
+  /*第一屏幕*/
+  .one{
+    background-image: url("https://pro-kg-oss.oss-cn-beijing.aliyuncs.com/author/inlet/1.1@3x.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    display: -webkit-box; /* 老版本语法（ Safari, iOS, Android browser, older WebKit browsers） */
+    display: -moz-box;/* 老版本火狐语法 */
+    display: -ms-flexbox; /* 混合版本语法: IE 10 */
+    /* 新语法 */
+    display: -webkit-flex;
+    display: flex;
+    flex-flow: row nowrap;
+    /* 老版本方法 */
+    -webkit-box-align: center;
+    -moz-box-align: center;
+    -ms-flex-align:center; /* 混合语法 */
+    /* 新版本语法 */
+    -webkit-align-items: center;
+    -moz-align-items: center;
+    align-items: center;
+  }
+  .one  .btn{
+    display: inline-block;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 192px;
+    height: 58px;
+    /*background-color: #2382EA;*/
+    -webkit-border-radius: 29px;
+    -moz-border-radius: 29px;
+    border-radius: 29px;
+    margin-left: 30px;
+    line-height: 60px;
+    cursor: pointer;
+    -webkit-user-select: none;
+    text-align: center;
+    font-size: 20px;
+  }
+  .one  .register{
+    background: none;
+    border: 1px solid #FFFFFF;
+    color: #FFFFFF;
+    font-size:24px;
+    font-family:MicrosoftYaHei;
+  }
+  .one  .login{
+    background-color: #fff;
+    color: #2382EA;
+    font-size:24px;
+    font-family:MicrosoftYaHei;
+  }
+  .one  .btnwrap{
+    padding-top: 112px;
+    margin-left: 300px;
+  }
+  .one .only-logo{
+    z-index: 6;
+    height: 43px;
+    width: 166px;
+    position: absolute;
+    left: 99px;
+    top: 38px;
+  }
+  .one .valus1{
+    display: block;
+    width: 350px;
+    height: auto;
+    margin-left: 300px;
+  }
+  .one .valus2{
+    display: block;
+    width: 350px;
+    height: auto;
+    margin-left: 504px;
+    margin-top: 42px;
+  }
+  .one .phone-title{
+    display: none;
+  }
+}
+/*适配手机*/
+@media (max-width: 768px){
+  /*头条样式*/
+  .header .logo_left {
+    position: absolute;
+    left: 20px;
+    top: 12px;
+    height: 35px;
+    width: 135px;
+  }
+  .header{
+    background: #ffffff;
+    z-index: 3;
+    height: 60px;
+    width: 100%;
+    -webkit-box-shadow: 15px 0px 38px rgba(132,152,179,0.21);
+    -moz-box-shadow: 15px 0px 38px rgba(132,152,179,0.21);
+    box-shadow:15px 0px 38px rgba(132,152,179,0.21);
+    transition: transform .3s,
+    -webkit-transform .3s,
+    -moz-transform .3s;
+    transform: translateY(-80px);
+  }
+  .header .btn-wrapper {
+    position: absolute;
+    bottom: 12px;
+    right: 20px;
+  }
+  .header .btn-wrapper .register {
+    background-color: #fff;
+    border: 1px solid #2382EA;
+    color: #2382EA;
+    width: 60px;
+    height: 33px;
+  }
+  .header .btn-wrapper .register:hover {
+    color: rgba(35, 130, 234, 0.7);
+    border: 1px solid rgba(35, 130, 234, 0.7);
+  }
+  .show-header {
+    -webkit-transform: translateY(0);
+    -moz-transform: translateY(0);
+    -ms-transform: translateY(0);
+    transform: translateY(0);
+  }
+  .fixed {
+    position: fixed;
+    top: 0;
+    left: 0;
+  }
+  .header .btn-wrapper .login {
+    background-color: #2382EA;
+    color: #fff;
+  }
+  .header .btn-wrapper .login:hover {
+    background: rgba(35, 130, 234, 0.7);
+  }
+  .header .btn-wrapper .btn {
+    display: inline-block;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 60px;
+    height: 35px;
+    /*background-color: #2382EA;*/
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    margin-left: 5px;
+    line-height: 35px;
+    cursor: pointer;
+    -webkit-user-select: none;
+    text-align: center;
+    font-size: 16px;
+  }
+
+  .animate-bounce-down{
+    display: block;
+    position: absolute;
+    left: 50%;
+    bottom: 20px;
+    z-index: 996;
+    width: 15px;
+    height: 15px;
+    -webkit-animation: bounce-down 2s linear infinite;
+    animation: bounce-down 2s linear infinite;
+  }
+  .animate-bounce-down img {
+    border: 0 none;
+  }
+  /*第一屏幕*/
+  .one{
+    background-image: url("https://pro-kg-oss.oss-cn-beijing.aliyuncs.com/author/inlet/phone-one-bg@3x.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    display: -webkit-box; /* 老版本语法（ Safari, iOS, Android browser, older WebKit browsers） */
+    display: -moz-box;/* 老版本火狐语法 */
+    display: -ms-flexbox; /* 混合版本语法: IE 10 */
+    /* 新语法 */
+    display: -webkit-flex;
+    display: flex;
+    flex-flow: row nowrap;
+    /* 老版本方法 */
+    -webkit-box-align: center;
+    -moz-box-align: center;
+    -ms-flex-align:center; /* 混合语法 */
+    /* 新版本语法 */
+    -webkit-align-items: center;
+    -moz-align-items: center;
+    align-items: center;
+  }
+  .one  .btn{
+    display: inline-block;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 110px;
+    height: 35px;
+    /*background-color: #2382EA;*/
+    -webkit-border-radius: 35px;
+    -moz-border-radius: 35px;
+    border-radius: 35px;
+    margin-left: 20px;
+    line-height: 35px;
+    cursor: pointer;
+    -webkit-user-select: none;
+    text-align: center;
+  }
+  .one  .register{
+    background: none;
+    border: 1px solid #FFFFFF;
+    color: #FFFFFF;
+    font-size:16px;
+    font-family:MicrosoftYaHei;
+  }
+  .one  .login{
+    background-color: #fff;
+    color: #2382EA;
+    font-size:16px;
+    font-family:MicrosoftYaHei;
+  }
+  .one  .btnwrap{
+    position: absolute;
+    bottom: 50px;
+    left: 50%;
+    margin-left: -130px;
+  }
+  .one .only-logo{
+    z-index: 6;
+    height: 35px;
+    width: 135px;
+    position: absolute;
+    left: 50%;
+    margin-left: -67px;
+    top: 30px;
+  }
+  .one .valus1{
+    display: none;
+    width: 350px;
+    height: auto;
+    margin-left: 300px;
+  }
+  .one .valus2{
+    display: none;
+    width: 350px;
+    height: auto;
+    margin-left: 504px;
+    margin-top: 42px;
+  }
+  .one>div{
+    width: 100%;
+    margin-top: -150px;
+  }
+  .one .phone-title{
+    display: flex;
+    flex-flow: nowrap row;
+    justify-content: center;
+    width: 100%;
+  }
+  .one .valus3{
+    display: block;
+    width: 183px;
+    height: 65px;
+  }
+  /*第2屏幕*/
+  .two{
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: center;
+    background-image: url("https://pro-kg-oss.oss-cn-beijing.aliyuncs.com/author/inlet/phone-two-bg@3x.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow: hidden;
+  }
+  .two .two-img{
+    width:285px;
+    height:239px;
+    background-image: url("https://pro-kg-oss.oss-cn-beijing.aliyuncs.com/author/inlet/2.2@3x.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    /*margin-bottom: -42px;*/
+    margin-left:0;
+    margin-top: 80px;
+  }
+  .two .two-text{
+    padding-top: 50px;
+    height:auto;
+    display: -webkit-box; /* 老版本语法（ Safari, iOS, Android browser, older WebKit browsers） */
+    display: -moz-box;/* 老版本火狐语法 */
+    display: -ms-flexbox; /* 混合版本语法: IE 10 */
+    /* 新语法 */
+    display: -webkit-flex;
+    display: -webkit-box; /* 老版本语法（ Safari, iOS, Android browser, older WebKit browsers） */
+    display: -moz-box;/* 老版本火狐语法 */
+    display: -ms-flexbox; /* 混合版本语法: IE 10 */
+    /* 新语法 */
+    display: -webkit-flex;
+    /* 老版本语法 */
+    -webkit-box-pack: justify;
+    -moz-box-pack: justify;
+    -ms-flex-pack: justify;
+    /* 新版本语法 */
+    -webkit-justify-content: center;
+    -moz-justify-content: center;
+    display: flex;
+    flex-flow: nowrap column;
+    /* 老版本语法 */
+    -webkit-box-pack: justify;
+    -moz-box-pack: justify;
+    -ms-flex-pack: justify;
+    /* 新版本语法 */
+    -webkit-justify-content: center;
+    -moz-justify-content: center;
+    justify-content: center;
+  }
+  .two .two-text .p1{
+    font-size:24px;
+    font-family:MicrosoftYaHei-Bold;
+    color:rgba(63,68,76,1);
+    font-weight: bold;
+    padding-bottom: 15px;
+
+  }
+  .two .two-text .p2{
+    font-size:18px;
+    font-family:MicrosoftYaHei;
+    color:rgba(102,102,102,1);
+    padding-bottom: 10px;
+
+  }
+  .two .two-text p{
+    margin: 0;
+    text-align: center;
+  }
+
+  /*第三屏幕*/
+  .three{
+    display: -webkit-box; /* 老版本语法（ Safari, iOS, Android browser, older WebKit browsers） */
+    display: -moz-box;/* 老版本火狐语法 */
+    display: -ms-flexbox; /* 混合版本语法: IE 10 */
+    /* 新语法 */
+    display: -webkit-flex;
+    display: flex;
+    flex-flow: column-reverse nowrap;
+    align-items: center;
+    justify-content: center;
+    background-image: url("https://pro-kg-oss.oss-cn-beijing.aliyuncs.com/author/inlet/phone-two-bg@3x.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  .three .three-img{
+    width:278px;
+    height:177px;
+    margin-top: 80px;
+    background-image: url("https://pro-kg-oss.oss-cn-beijing.aliyuncs.com/author/inlet/3.2@3x.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .three .three-text{
+    height:auto;
+    margin-left: 0px;
+    display: -webkit-box; /* 老版本语法（ Safari, iOS, Android browser, older WebKit browsers） */
+    display: -moz-box;/* 老版本火狐语法 */
+    display: -ms-flexbox; /* 混合版本语法: IE 10 */
+    /* 新语法 */
+    display: -webkit-flex;
+    display: flex;
+    flex-flow: nowrap column;
+    /* 老版本语法 */
+    -webkit-box-pack: justify;
+    -moz-box-pack: justify;
+    -ms-flex-pack: justify;
+    /* 新版本语法 */
+    -webkit-justify-content: center;
+    -moz-justify-content: center;
+    justify-content: center;
+  }
+  .three .three-text .p1{
+    font-size:24px;
+    font-family:MicrosoftYaHei-Bold;
+    color:rgba(63,68,76,1);
+    font-weight: bold;
+    padding-bottom: 15px;
+  }
+  .three .three-text .p2{
+    font-size:18px;
+    font-family:MicrosoftYaHei;
+    color:rgba(102,102,102,1);
+    padding-bottom: 10px;
+  }
+  .three .three-text p{
+    margin: 0;
+    text-align: center;
+  }
+  .four{
+    background-image: url("https://pro-kg-oss.oss-cn-beijing.aliyuncs.com/author/inlet/phone-two-bg@3x.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: -webkit-box; /* 老版本语法（ Safari, iOS, Android browser, older WebKit browsers） */
+    display: -moz-box;/* 老版本火狐语法 */
+    display: -ms-flexbox; /* 混合版本语法: IE 10 */
+    /* 新语法 */
+    display: -webkit-flex;
+    display: flex;
+    flex-flow: column nowrap;
+    /* 老版本语法 */
+    -webkit-box-pack: justify;
+    -moz-box-pack: justify;
+    -ms-flex-pack: justify;
+    /* 新版本语法 */
+    -webkit-justify-content: center;
+    -moz-justify-content: center;
+    /* 老版本方法 */
+    -webkit-box-align: center;
+    -moz-box-align: center;
+    -ms-flex-align:center; /* 混合语法 */
+    /* 新版本语法 */
+    -webkit-align-items: center;
+    -moz-align-items: center;
+    align-items: center;
+    justify-content: center;
+  }
+  .four .four-text{
+    padding-top: 10px;
+    height:auto;
+    /*margin-left: 123px;*/
+    display: -webkit-box; /* 老版本语法（ Safari, iOS, Android browser, older WebKit browsers） */
+    display: -moz-box;/* 老版本火狐语法 */
+    display: -ms-flexbox; /* 混合版本语法: IE 10 */
+    /* 新语法 */
+    display: -webkit-flex;
+    display: flex;
+    flex-flow: nowrap column;
+    /* 老版本语法 */
+    -webkit-box-pack: justify;
+    -moz-box-pack: justify;
+    -ms-flex-pack: justify;
+    /* 新版本语法 */
+    -webkit-justify-content: center;
+    -moz-justify-content: center;
+    justify-content: center;
+  }
+  .four .four-text .p1{
+    font-size:24px;
+    font-family:MicrosoftYaHei-Bold;
+    color:rgba(63,68,76,1);
+    font-weight: bold;
+    text-align: center;
+    padding-bottom: 15px;
+  }
+  .four .four-text .p2{
+    font-size:18px;
+    font-family:MicrosoftYaHei;
+    color:rgba(102,102,102,1);
+    text-align: center;
+    padding-bottom: 10px;
+  }
+  .four .four-text p{
+    margin: 0;
+  }
+  .four .four-img{
+    width:284px;
+    height:180px;
+    background-image: url("https://pro-kg-oss.oss-cn-beijing.aliyuncs.com/author/inlet/4.2@3x.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    /*margin-bottom: -42px;*/
+    margin-left:0;
+    margin-top: 80px;
+  }
+  /*第5屏幕*/
+  .five{
+    display: -webkit-box; /* 老版本语法（ Safari, iOS, Android browser, older WebKit browsers） */
+    display: -moz-box;/* 老版本火狐语法 */
+    display: -ms-flexbox; /* 混合版本语法: IE 10 */
+    /* 新语法 */
+    display: -webkit-flex;
+    display: flex;
+    flex-flow: column-reverse nowrap;
+    align-items: center;
+    justify-content: center;
+    background-image: url("https://pro-kg-oss.oss-cn-beijing.aliyuncs.com/author/inlet/phone-two-bg@3x.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow: hidden;
+  }
+  .five  .five-img{
+    width:313px;
+    height:203px;
+    background-image: url("https://pro-kg-oss.oss-cn-beijing.aliyuncs.com/author/inlet/5.2@3x.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: 50px;
+  }
+  .five .five-text{
+    padding-top: 10px;
+    height:auto;
+    margin-left: 0px;
+    display: -webkit-box; /* 老版本语法（ Safari, iOS, Android browser, older WebKit browsers） */
+    display: -moz-box;/* 老版本火狐语法 */
+    display: -ms-flexbox; /* 混合版本语法: IE 10 */
+    /* 新语法 */
+    display: -webkit-flex;
+    display: flex;
+    flex-flow: nowrap column;
+    /* 老版本语法 */
+    -webkit-box-pack: justify;
+    -moz-box-pack: justify;
+    -ms-flex-pack: justify;
+    /* 新版本语法 */
+    -webkit-justify-content: center;
+    -moz-justify-content: center;
+    justify-content: center;
+  }
+  .five .five-text .p1{
+    font-size:24px;
+    font-family:MicrosoftYaHei-Bold;
+    color:rgba(63,68,76,1);
+    font-weight: bold;
+    padding-bottom: 15px;
+  }
+  .five .five-text .p2{
+    font-size:18px;
+    font-family:MicrosoftYaHei;
+    color:rgba(102,102,102,1);
+    padding-bottom: 10px;
+  }
+  .five .five-text p{
+    margin: 0;
+    text-align: center;
+  }
+  /*第6屏*/
+  .six{
+    background-image: url("https://pro-kg-oss.oss-cn-beijing.aliyuncs.com/author/inlet/phone-two-bg@3x.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  .six .only-logo{
+    z-index: 6;
+    height: 43px;
+    width: 166px;
+    position: absolute;
+    left: 99px;
+    top: 38px;
+  }
+  .six .text{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform:translate(-50%,-50%);
+    text-align: center;
+  }
+  .six .text .btn-wrapper {
+    padding-top: 50px;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: center;
+  }
+  .six .text .btn-wrapper .register {
+    background-color: #fff;
+    border: 1px solid #2382EA;
+    color: #2382EA;
+  }
+  .six .text .btn-wrapper .login {
+    background-color: #2382EA;
+    color: #fff;
+  }
+  .six .text .btn-wrapper .login:hover {
+    background: rgba(35, 130, 234, 0.7);
+  }
+  .six .text .btn-wrapper .register:hover {
+    color: rgba(35, 130, 234, 0.7);
+    border: 1px solid rgba(35, 130, 234, 0.7);
+  }
+  .six .text .btn-wrapper .btn {
+    display: inline-block;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 110px;
+    height: 35px;
+    /*background-color: #2382EA;*/
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    margin-left: 30px;
+    line-height: 35px;
+    cursor: pointer;
+    -webkit-user-select: none;
+    text-align: center;
+    font-size: 16px;
+  }
+  .six .text .boss{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+  }
+  .six .text .text-p{
+    font-size:22px;
+    font-family:MicrosoftYaHei-Bold;
+    color:rgba(63,68,76,1);
+    padding-top: 15px;
+    margin: 0;
+    font-weight: bold;
+  }
+  .six .text .text-p-last{
+    font-size:18px;
+    font-family:MicrosoftYaHei;
+    color:rgba(102,102,102,1);
+    padding-top: 15px;
+    margin: 0;
+  }
+
+  /*小圆点样式*/
+  #fp-nav ul li, .fp-slidesNav ul li {
+    display: block;
+    width: 14px;
+    height: 13px;
+    margin: 15px 0;
+    position: relative;
+  }
+  #fp-nav ul li a span, .fp-slidesNav ul li a span{
+    position: absolute;
+    z-index: 1;
+    /*border: 0;*/
+    background: #DDDDDD;
+    left: 50%;
+    top: 50%;
+    height: 7px;
+    width: 7px;
+    transition: width 2s;
+    /*border: 4px solid #f95e58;*/
+  }
+
+  #fp-nav ul li a.active span, #fp-nav ul li:hover a.active span, .fp-slidesNav ul li a.active span, .fp-slidesNav ul li:hover a.active span {
+    height: 7px;
+    width: 7px;
+    margin: -6px 0 0 -6px;
+    border-radius: 100%;
+    border: 4px solid #C4E0FF;
+    background-color: #2382EA;
+    /*  -webkit-transform: translateX(-4px);
+      -moz-transform: translateX(-4px);
+      -ms-transform: translateX(-4px);
+      transform: translateX(-4px);*/
+  }
+  #fp-nav ul li:hover a span, .fp-slidesNav ul li:hover a span{
+    height: 7px;
+    width: 7px;
+    margin: -6px 0 0 -6px;
+    border-radius: 100%;
+    border: 4px solid #C4E0FF;
+    background-color: #2382EA;
+  }
+}

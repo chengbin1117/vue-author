@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="keywords" content="千氪专栏,千氪作者端">
+    <meta name="description" content="千氪专栏是为内容创作者提供创作环境与读者分析的平台。申请千氪专栏，即可在千氪发表文章，收获粉丝和文章奖励，文章质量越高，收益越多。千氪专栏旨在链接千氪、传递价值，满足优质作者的创作需求。">
+  <title>千氪专栏</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge，chrome=1">
+  <script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdn.bootcss.com/fullPage.js/2.9.7/jquery.fullpage.min.js"></script>
+  <link rel="shortcut icon"  href="https://pro-kg-oss.oss-cn-beijing.aliyuncs.com/ico/favicon_author.png" type="image/x-icon">
+  <link rel="stylesheet" href="https://cdn.bootcss.com/fullPage.js/2.9.7/jquery.fullpage.min.css">
+  <link rel="stylesheet" href="https://cdn.bootcss.com/animate.css/3.5.2/animate.min.css">
+  <link rel="stylesheet" href="./static/style/guidePage.css">
+  <!-- GrowingIO Analytics code version 2.1 -->
+  <!-- Copyright 2015-2018 GrowingIO, Inc. More info available at http://www.growingio.com -->
+
+  <script>
+      //var token = localStorage.getItem('kg_desk_token')
+
+      //获取token
+      const getCookie = (objName) => {
+          var arrStr = document.cookie.split("; ");
+          for (var i = 0; i < arrStr.length; i++) {
+              var temp = arrStr[i].split("=");
+              if (temp[0] == objName)
+                  return unescape(temp[1]);
+          }
+      }
+      var token = getCookie('token')
+          if(token) {
+            // alert(1)
+            window.location.href ='./author/#/';
+          }
+    </script>
+  <script type='text/javascript'>
+    !function(e,t,n,g,i){e[i]=e[i]||function(){(e[i].q=e[i].q||[]).push(arguments)},n=t.createElement("script"),tag=t.getElementsByTagName("script")[0],n.async=1,n.src=('https:'==document.location.protocol?'https://':'http://')+g,tag.parentNode.insertBefore(n,tag)}
+    (window,document,"script","assets.growingio.com/2.1/gio.js","gio");
+      gio('init','a5372fa9e5844884', {});
+      //custom page code begin here
+      //custom page code end here
+      gio('send');
+    </script>
+</head>
+<body>
+<!--箭头给相应的锚点就可以了-->
+<div id="fullpage">
+  <div class="header fixed">
+    <img src="https://pro-kg-oss.oss-cn-beijing.aliyuncs.com/author/inlet/logo2.png"  class="logo_left">
+    <div class="btn-wrapper">
+      <div class="btn register">注册</div>
+      <div class="btn login" >登录</div>
+    </div>
+  </div>
+  <!--第1屏-->
+  <div class="section re one">
+    <div>
+      <img src="https://pro-kg-oss.oss-cn-beijing.aliyuncs.com/author/inlet/logo1.png"  class="only-logo">
+      <img class="valus1"  src="https://pro-kg-oss.oss-cn-beijing.aliyuncs.com/author/inlet/1.3@3x.png" alt="">
+      <img class="valus2"  src="https://pro-kg-oss.oss-cn-beijing.aliyuncs.com/author/inlet/1.2@3x.png" alt="">
+      <div class="phone-title">
+        <img class="valus3"  src="https://pro-kg-oss.oss-cn-beijing.aliyuncs.com/author/inlet/phone-one-title@3x.png" alt="">
+      </div>
+      <div class="btnwrap">
+        <div class="btn register">注册</div>
+        <div class="btn login">登录</div>
+      </div>
+    </div>
+    <i class="&#xe605;" style="width: 30px;height: 28px;position: absolute;bottom: 30px;left: 50%"></i>
+    <a href="#page2" class="animate-bounce-down">
+      <img src="https://pro-kg-oss.oss-cn-beijing.aliyuncs.com/author/inlet/arrow.png" alt="" style="width: 100%;display: block">
+    </a>
+  </div>
+  <!--第2屏-->
+  <div class="section re two"  >
+    <div class="two-text" >
+      <p class="p1">多元内容自由创作</p>
+      <p class="p2">文章、视频、音频</p>
+      <p class="p2">自由实现多种形式展示你的思想火花</p>
+    </div>
+    <div class="two-img"></div>
+    <a href="#page3" class="animate-bounce-down">
+      <img src="https://pro-kg-oss.oss-cn-beijing.aliyuncs.com/author/inlet/arrow.png" alt="" style="width: 100%;display: block">
+    </a>
+  </div>
+  <!--第3屏-->
+  <div class="section re three" >
+    <div class="  three-img"></div>
+    <div class="  three-text " >
+      <p class="p1">真正的个性化内容定义
+
+      </p>
+
+      <p class="p2">给自己的文章加上关键词标签</p>
+      <p class="p2">读者群体你来决定
+
+      </p>
+    </div>
+    <a href="#page4" class="animate-bounce-down">
+      <img src="https://pro-kg-oss.oss-cn-beijing.aliyuncs.com/author/inlet/arrow.png" alt="" style="width: 100%;display: block">
+    </a>
+  </div>
+  <!--第4屏-->
+  <div class="section re four" >
+    <div class="four-text" >
+      <p class="p1">收益统计</p>
+      <p class="p1">让你对自己的创作成果一目了然
+      </p>
+      <p class="p2">好内容，当然要有好收益
+      </p>
+      <p class="p2">优质原创内容收益实时统计
+      </p>
+    </div>
+    <div class="four-img"></div>
+    <a href="#page5" class="animate-bounce-down">
+      <img src="https://pro-kg-oss.oss-cn-beijing.aliyuncs.com/author/inlet/arrow.png" alt="" style="width: 100%;display: block">
+    </a>
+  </div>
+  <!--第5屏-->
+  <div class="section re five" >
+    <div class="five-img"></div>
+    <div class="five-text">
+      <p class="p1">动态粉丝数据</p>
+      <p class="p1">让你与你的粉丝更贴近</p>
+      <p class="p2">粉丝数据实时更新</p>
+      <p class="p2">每日增长数据看得见，告别数据等待</p>
+    </div>
+    <a href="#page6" class="animate-bounce-down">
+      <img src="https://pro-kg-oss.oss-cn-beijing.aliyuncs.com/author/inlet/arrow.png" alt="" style="width: 100%;display: block">
+    </a>
+  </div>
+  <!--第6屏-->
+  <div class="section re six" id="mysix" >
+    <!--<img src="https://pro-kg-oss.oss-cn-beijing.aliyuncs.com/author/inlet/logo2.png"  class="only-logo">-->
+    <div class="text">
+     <div class="boss">
+       <p class="text-p ">在这里，人人都能是好作者</p>
+       <p class="text-p ">现在就开始吧</p>
+       <p  class="text-p-last ">成为作者其实很简单，只需提供基本资料，便可开通专栏</p>
+     </div>
+      <div class="btn-wrapper">
+        <div class="btn register">注册</div>
+        <div class="btn login">登录</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+  $(function(){
+
+    $('#fullpage').fullpage({
+      navigation           :true,                            //圆点导航
+      navigationPosition   :'left',                        //圆点导航位置left or right
+//            navigationTooltips   :['第一屏','第二屏','第三屏'],    //圆点导航提示信息
+      showActiveTooltip    :true,                            //圆点导航提示信息是否显示
+      anchors              :['page1','page2','page3','page4','page5','page6'],    //设置锚点
+      menu                 :'.header',                        //导航  menu：绑定菜单，设定相关属性与anchors的值相对应后，菜单可以控制滚动，默认为false；
+      verticalCentered     :false,                        //设置元素是否垂直居中
+      scrollingSpeed       :1000,                            //设置切屏速度
+//            滚动到某一屏后的回调函数
+      afterLoad:function (p1,index) {
+        if(index==1||index==6){
+          $('.header').css('display','block')
+          $('.header').removeClass('show-header')
+        }else{
+          $('.header').css('display','block')
+          $('.header').addClass('show-header')
+        }
+        /* if(index==1){
+         $('.one .valus1').addClass('animated bounceInLeft')
+         $('.one .valus2').addClass('animated bounceInRight')
+         }*/
+      },
+//            页面结构生成后的回调函数，或者说页面初始化完成后的回调函数
+      afterRender:function () {
+        $('.header').css('display','none')
+        $('.one .valus1').addClass('animated slideInLeft')
+        $('.one .valus2').addClass('animated slideInLeft')
+      },
+      onLeave:function (index,nextIndex,direction) {
+        if(index==1&&nextIndex==2){
+          $('.one .valus1').removeClass('animated slideInLeft')
+          $('.one .valus2').removeClass('animated slideInLeft')
+          $('.two .two-img').addClass('animated slideInDown')
+          $('.two .two-text').addClass('animated slideInUp')
+        }
+        if(index==2&&nextIndex==3){
+          $('.two .two-img').removeClass('animated slideInDown')
+          $('.two .two-text').removeClass('animated slideInUp')
+          $('.three .three-img').addClass('animated slideInDown')
+          $('.three .three-text').addClass('animated slideInUp')
+        }
+        if(index==3&&nextIndex==4){
+          $('.four .four-img').addClass('animated slideInDown')
+          $('.four .four-text').addClass('animated slideInUp')
+          $('.three .three-img').removeClass('animated slideInDown')
+          $('.three .three-text').removeClass('animated slideInUp')
+        }
+        if(index==4&&nextIndex==5){
+          $('.five .five-img').addClass('animated slideInDown')
+          $('.five .five-text').addClass('animated slideInUp')
+          $('.four .four-img').removeClass('animated slideInDown')
+          $('.four .four-text').removeClass('animated slideInUp')
+        }
+        if(index==5&&nextIndex==6){
+          $('.six .boss').addClass('animated  slideInDown')
+          $('.five .five-img').removeClass('animated slideInDown')
+          $('.five .five-text').removeClass('animated slideInUp')
+        }
+        if(index==6&&nextIndex==5){
+          $('.six .boss').removeClass('animated  slideInDown')
+          $('.five .five-img').addClass('animated slideInDown')
+          $('.five .five-text').addClass('animated slideInUp')
+        }
+        if(index==5&&nextIndex==4){
+          $('.five .five-img').removeClass('animated slideInDown')
+          $('.five .five-text').removeClass('animated slideInUp')
+          $('.four .four-img').addClass('animated slideInDown')
+          $('.four .four-text').addClass('animated slideInUp')
+        }
+        if(index==4&&nextIndex==3){
+          $('.four .four-img').removeClass('animated slideInDown')
+          $('.four .four-text').removeClass('animated slideInUp')
+          $('.three .three-img').addClass('animated slideInDown')
+          $('.three .three-text').addClass('animated slideInUp')
+        }
+        if(index==3&&nextIndex==2){
+          $('.two .two-img').addClass('animated slideInDown')
+          $('.two .two-text').addClass('animated slideInUp')
+          $('.three .three-img').removeClass('animated slideInDown')
+          $('.three .three-text').removeClass('animated slideInUp')
+        }
+        if(index==2&&nextIndex==1){
+          $('.one .valus1').addClass('animated slideInLeft')
+          $('.one .valus2').addClass('animated slideInLeft')
+          $('.two .two-img').removeClass('animated slideInDown')
+          $('.two .two-text').removeClass('animated slideInUp')
+        }
+
+      }
+    });
+  });
+  $(".login").click(function(){
+    window.location.href ='./author/#/login';
+  });
+  $(".register").click(function(){
+    window.location.href ='./author/#/register';
+  });
+
+</script>
+</body>
+</html>

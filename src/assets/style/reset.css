@@ -1,0 +1,31 @@
+*{word-wrap:break-word}
+html,body,h1,h2,h3,h4,h5,h6,p,ul,li,form,button,input,textarea,th,td{margin:0;padding:0}
+ul,ol,dl{list-style-type:none}
+html{-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%}
+input,button{overflow: visible;vertical-align:middle;outline:none}
+body,th,td,button,input,select,textarea{font-family:"PingFangSC","Hiragino Sans GB","Helvetica Neue",Helvetica,tahoma,arial,Verdana,sans-serif,"WenQuanYi Micro Hei","\5B8B\4F53";font-size:14px;color: #333;-webkit-font-smoothing: antialiased;-moz-osx-font-smoothing:grayscale}
+a{text-decoration:none;cursor: pointer}
+a:hover{text-decoration:underline;outline:none}
+a.ie6:hover{zoom:1}
+a:focus{outline:none}
+a:hover,a:active{outline:none}:focus{outline:none}
+/*img*/
+img{border:0;vertical-align:middle}
+.img-responsive{max-width: 100%;height: auto}
+html,body{margin:0;padding:0;height:100%;}
+*,*::after,*::before{box-sizing:border-box;}
+i{font-style: normal}
+input::-webkit-outer-spin-button,input::-webkit-inner-spin-button {-webkit-appearance:none;}
+input[type="number"]{-moz-appearance: textfield;}
+.cursorPointer{cursor: pointer;}
+/* 空白展位图 */
+.emptyBox{
+    height: 157px;
+    width: 151px;
+    background-image: url('https://pro-kg-oss.oss-cn-beijing.aliyuncs.com/author/dataNull.png');
+    background-size: 100% 100%;
+    margin-top: 178px;
+    margin-left: 375px;
+}
+input:-webkit-autofill {-webkit-box-shadow : 0 0 0px 1000px #fff inset;}
+a:hover{text-decoration: none;color: #2382EA}
